@@ -1,15 +1,15 @@
 import React from "react"
-import { RiCheckboxBlankCircleFill, RiCheckboxBlankFill, RiPlayFill, RiStarFill } from "react-icons/ri"
+import { RiCheckboxBlankCircleFill, RiPlayFill, RiStarFill } from "react-icons/ri"
 
 const Hero = () => {
   return(
-    <section className="h-[90vh] grid grid-cols-1 md:grid-cols-8">
+    <section className="min-h-[90vh] grid grid-cols-1 xl:grid-cols-8">
       {/* Information */}
-      <div className="md:col-span-5 flex items-center justify-center p-16">
+      <div className="md:col-span-5 flex items-center justify-center p-8 xl:p-16">
         <div className="flex flex-col gap-8">
-          <h1 className="text-6xl font-bold leading-[6.5rem]">
+          <h1 className="text-5xl xl:text-7xl font-bold xl:leading-[7rem] ml-[1rem]">
             Web Design Impactful Digital {" "}
-            <span className="text-primary py-0 px-6 border-8 border-primary relative">
+            <span className="text-primary py-2 px-6 border-8 border-primary relative inline-block">
               Products
               <RiCheckboxBlankCircleFill className="text-white text-base absolute -left-5 -top-5 p-2 bg-primary rounded-full box-content" />
               <RiCheckboxBlankCircleFill className="text-white text-base absolute -right-5 -top-5 p-2 bg-primary rounded-full box-content" />
@@ -20,11 +20,11 @@ const Hero = () => {
           <p className="text-gray-500 text-2xl leading-[2.5rem]">
             Help find solutions with institutive and in accordance with client business goals. We provide a high-quality services.
           </p>
-          <div className="flex items-center gap-4">
-            <button className="bg-primary text-white py-2 px-8 rounded-xl text-xl font-bold">
+          <div className="flex flex-col md:flex-row items-center gap-4">
+            <button className="xl:w-60 w-full bg-primary text-white py-2 px-8 rounded-xl text-xl font-bold">
               Contact Us
             </button>
-            <button className="flex items-center justify-start text-left gap-4 py-2 px-8 rounded-xl text-xl text-gray-500">
+            <button className="xl:w-100 w-full flex items-center justify-start text-left gap-4 py-2 px-8 rounded-xl text-xl text-gray-500">
               <RiPlayFill className="bg-secondary text-primary p-4 rounded-full box-content" /> Watch our <br /> introduction video
             </button>
           </div>
@@ -34,7 +34,7 @@ const Hero = () => {
       <div className="md:col-span-3 flex items-center justify-center relative">
         {/* Content image */}
         <div>
-          <img src="hero.png" className="w-[450px] h-[450px] object-cover -mt-28" />
+          <img src="hero.png" className="w-[250px] h-[250px] md:w-[450px] md:h-[450px] object-cover xl:-mt-28" />
           {/*<RiCheckboxBlankCircleFill className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 text-[380px] text-secondary bg-primary rounded-full -z-10" />*/}
           <div className="relative bg-white shadow-xl p-2 flex flex-col justify-center max-w-[250px] mx-auto gap-2 -mt-12">
             <div className="flex items-center">
@@ -70,16 +70,16 @@ const Hero = () => {
           </div>
         </div>
         {/* Circle */}
-        <div className="rounded-full p-44 bg-secondary absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 border-primary border-8 -z-10"></div>
+        <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[280px] h-[280px] bg-white border-[10px] border-primary rounded-full -z-10"></div>
 
         {/* Logos */}
         <img
           src="figma.png" 
-          className="w-20 h-20 object-cover rounded-full border-l-8 border-gray-600 absolute top-[8%] right-[10%] -rotate-6"
+          className="w-10 h-10 md:w-20 md:h-20 object-cover rounded-full border-l-8 border-gray-600 absolute top-[10%] xl:top-[10%] right-[10%] -rotate-6"
         />
         <img
           src="adobe.png" 
-          className="w-14 h-14 object-cover rounded-full border-l-8 border-gray-600 absolute top-[7.5%] left-[19%] -rotate-12"
+          className="w-10 h-10 md:w-20 md:h-20 object-cover rounded-full border-l-8 border-gray-600 absolute top-[7.5%] left-[15%] -rotate-12"
         />
       </div>
     </section>
