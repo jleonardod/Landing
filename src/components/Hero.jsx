@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="flex flex-col gap-8">
           <h1 className="text-5xl xl:text-7xl font-bold xl:leading-[7rem] ml-[1rem]">
             Web Design Impactful Digital {" "}
-            <span className="text-primary py-2 px-6 border-8 border-primary relative inline-block">
+            <span className="text-primary py-2 px-6 border-8 border-primary relative inline-block xl:mt-0 mt-2">
               Products
               <RiCheckboxBlankCircleFill className="text-white text-base absolute -left-5 -top-5 p-2 bg-primary rounded-full box-content" />
               <RiCheckboxBlankCircleFill className="text-white text-base absolute -right-5 -top-5 p-2 bg-primary rounded-full box-content" />
